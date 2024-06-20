@@ -20,8 +20,9 @@ def interest(balance, interest):
     interest = (interest/12)/365 # Because of the time_difference.days, the self.interest value comes out to be in minus
     return interest
 
+savings_total = SavingAccount.interest_amount()
+savings_interest =  SavingAccount.interest_earned()
 
-print(interest(10000, 5))
 
 
 
