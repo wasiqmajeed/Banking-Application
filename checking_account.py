@@ -25,7 +25,7 @@ class CheckingAccount:
 
         # Replace the original file with the updated temporary file    
         os.replace(temp_file.name, 'customers.csv')
-        return f"{amount} has been credited to your account"
+        return f"${amount} has been credited to your account"
     
     
     @staticmethod
@@ -55,7 +55,7 @@ class CheckingAccount:
 
         # Replace the original file with the updated temporary file    
         os.replace(temp_file.name, 'customers.csv')
-        return f"{amount} has been debited from your account"
+        return f"${amount} has been debited from your account"
 
     @staticmethod
     def total_balance(account):
